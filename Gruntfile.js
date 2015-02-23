@@ -2,7 +2,11 @@ module.exports = function (grunt) {
     grunt.initConfig({
         shell: { 
     		server: { 
-     		command: 'java -cp L1.2-1.0-jar-with-dependencies.jar main.Main 8080'        	
+                options: {
+                    stdout: true,
+                    stderr: true
+                },
+     	        command: 'java -cp L1.2-1.0-jar-with-dependencies.jar main.Main 8080'        	
     		}
         },
 		fest: { 
@@ -25,30 +29,37 @@ module.exports = function (grunt) {
 	       }		
 		},
 	    watch: {
-            fest: { /* Подзадача */
-                files: ['templates/*.xml'], /* следим за шаблонами */
-                tasks: ['fest'], /* перекомпилировать */
+            fest: {
+                files: ['templates/*.xml'],
+                tasks: ['fest'],
                 options: {
-                    atBegin: true /* запустить задачу при старте */
+                    interrupt: true,
+                    atBegin: true
                 }
             },
-            server: { /* Подзадача */
-                files: ['public_html/js/**/*.js'], /* следим за JS */
+            server: {
+                files: [
+                    'public_html/js/**/*.js',
+                    'public_html/css/**/*.css'
+                ],
                 options: {
-                    livereload: true /* автоматическая перезагрузка */
+                    livereload: true
                 }
             }
         },
         concurrent: {
-            target: ['watch', 'shell'], /* Подзадача */
+            target: ['watch', 'shell'],
             options: {
-                logConcurrentOutput: true, /* Вывод процесса */
+                logConcurrentOutput: true
             }
         }
     });
-	grunt.loadNpmTasks('grunt-shell');
-	grunt.loadNpmTasks('grunt-fest');
+
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concurrent');
-    grunt.registerTask('default', ['shell', 'watch']);
+    grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-fest');
+
+    grunt.registerTask('default', ['concurrent']);
+
 };
