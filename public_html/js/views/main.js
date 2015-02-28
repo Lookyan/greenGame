@@ -9,17 +9,24 @@ define([
     var View = Backbone.View.extend({
 
         template: tmpl,
+        className: 'wrap',
         initialize: function () {
-            // TODO
+            $('body').append(this.el);
+            this.render();
         },
+        
         render: function () {
-            // TODO
+            this.$el.html(this.template);
+            return this;
         },
+        
         show: function () {
-            // TODO
+            this.$el.show();
+            this.trigger("show", this);
         },
+        
         hide: function () {
-            // TODO
+            this.$el.hide();
         }
 
     });
