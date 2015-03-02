@@ -4,9 +4,10 @@ define([
     'views/login',
     'views/main',
     'views/game',
+    'views/signup',
     'views/manager'
 ], function(
-    Backbone, scoreboardScreen, loginScreen, mainScreen, gameScreen, viewManager
+    Backbone, scoreboardScreen, loginScreen, mainScreen, gameScreen, signupScreen, viewManager
 ){
 
     var Router = Backbone.Router.extend({
@@ -14,6 +15,7 @@ define([
             'scoreboard': 'scoreboardAction',
             'game': 'gameAction',
             'login': 'loginAction',
+            'signup': 'signupAction',
             '*default': 'defaultActions'
         },
         initialize: function () {
@@ -21,6 +23,7 @@ define([
             viewManager.addView(loginScreen);
             viewManager.addView(gameScreen);
             viewManager.addView(mainScreen);
+            viewManager.addView(signupScreen);
         },
         defaultActions: function () {
             mainScreen.show();
@@ -33,6 +36,9 @@ define([
         },
         loginAction: function () {
             loginScreen.show();
+        },
+        signupAction: function () {
+            signupScreen.show();
         }
     });
 

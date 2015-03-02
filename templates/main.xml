@@ -1,11 +1,10 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
     <div>
-        <h1>BlackJack</h1>
-        <h2>Main Menu</h2>
         <ul>
-        <li><a href="#scoreboard">Scoreboard</a></li>
-		<li><a href="#game">Game</a></li>
-		<li><a href="#login">Login</a></li>
+	        <li><a href="#scoreboard">Scoreboard</a></li>
+			<li><a href="#game">Game</a></li>
+			<li><a href="#login">Login</a></li>
+			<li><a href="#signup">Sign up</a></li>
 		</ul>
     </div>
 </fest:template>

@@ -1,2 +1,26 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+	<div class="game">
+		<h1>BlackJack</h1>
+      <div id="dealer-cards">
+      </div>
+      
+      <div id="ui">
+        
+        <div class="total">Dealer <span id="dealer-total"></span></div>
+        
+        <div class="zone">
+          <div id="deal"><a href="#" onclick="App.deal();">Deal</a><span class="shortcut">spacebar</span></div>
+          <ul id="actions">
+            <li><a href="#" onclick="App.hit();">Hit</a><span class="shortcut">spacebar</span></li>
+            <li><a href="#" onclick="App.stand();">Stand</a><span class="shortcut">s</span></li>
+            <li><a id="double" href="#" onclick="App.doubledown();">Double</a><span class="shortcut">d</span></li>
+          </ul>
+        </div>
+        
+        <div class="total bot">Player <span id="player-total" ></span></div> 
+        
+      </div>
+      
+      <div id="player-cards"></div>
+	</div>
 </fest:template>
