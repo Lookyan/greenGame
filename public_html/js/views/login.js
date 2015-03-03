@@ -10,6 +10,11 @@ define([
 
         template: tmpl,
         className: 'wrap',
+
+        events: {
+            "submit": "subm"
+        },
+
         initialize: function () {
             $('body').append(this.el);
             this.render();
@@ -27,6 +32,13 @@ define([
         
         hide: function () {
             this.$el.hide();
+        },
+
+        subm: function (event) {
+            console.log("submit func login")
+            event.preventDefault()
+            var data = $(event.target).serialize()
+            console.log(data)
         }
 
     });

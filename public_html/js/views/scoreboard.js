@@ -13,6 +13,7 @@ define([
         template: tmpl,
         className: 'wrap',
         model: scores,
+
         initialize: function () {
             $('body').append(this.el);
             this.render();
