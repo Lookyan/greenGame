@@ -1,9 +1,9 @@
 <fest:template xmlns:fest="http://fest.mail.ru"  context_name="json">
       <div class="module">        
         <form class="form">
-          <input type="text" placeholder="Name" class="module__form_textbox" name="name" required="" pattern="^[a-zA-Z0-9_-]+$"/>
-          <input type="password" placeholder="Password" class="module__form_textbox" name="password" required=""/>
-          <input type="submit" value="Sign in" class="module__form_button" />
+          <input type="text" placeholder="Name" class="module__form_textbox" name="name" required="required" pattern="^[a-zA-Z0-9_-]+$"/>
+          <input type="password" placeholder="Password" class="module__form_textbox" name="password" required="required"/>
+          <input id="login__submit" type="submit" value="Sign in" class="module__form_button" />
           <a href="/#" class="login__js-back"> Back </a>
         </form>
       </div>
