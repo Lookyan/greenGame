@@ -12,7 +12,7 @@ define([
         className: 'wrap',
 
         events: {
-            "submit": "subm"
+            "submit": "send"
         },
 
         initialize: function () {
@@ -34,11 +34,27 @@ define([
             this.$el.hide();
         },
 
-        subm: function (event) {
-            console.log("submit func signup")
-            event.preventDefault()
-            var data = $(event.target).serialize()
-            console.log(data)
+        send: function (event) {
+            console.log("submit func signup");
+            event.preventDefault();
+            $('#signup__submit').prop('disabled', true);
+
+            var data = $(event.target).serialize();
+            $.post({
+                url: '/api/v1/signup',
+                data: data,
+                success: function () {
+                    console.log('test');
+                }
+            })
+                .fail(function () {
+                    console.log('sending troubles!!');
+                    $('#signup__submit').prop('disabled', false);
+                });
+
+
+
+            //console.log(data);
         }
 
     });
