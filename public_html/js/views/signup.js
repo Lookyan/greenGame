@@ -39,10 +39,11 @@ define([
             event.preventDefault();
             $('#signup__submit').prop('disabled', true);
 
-            var data = $(event.target).serialize();
+            var data = $(event.target).serializeArray();
             $.post({
                 url: '/api/v1/signup',
-                data: data,
+                data: JSON.stringify(data),
+                contentType: 'application/json',
                 success: function () {
                     console.log('test');
                 }
