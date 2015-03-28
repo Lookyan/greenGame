@@ -21,6 +21,8 @@
         
       </div>
       
-      <div id="player-cards"></div>
+      <div id="player-cards">
+        cards...
+      </div>
 	</div>
 </fest:template>

@@ -37,7 +37,7 @@ define([
         send: function (event) {
             console.log("submit func signup");
             event.preventDefault();
-            $('#signup__submit').prop('disabled', true);
+            this.$('.signup__submit').prop('disabled', true);
 
             var data = $(event.target).serializeArray();
             $.post({
