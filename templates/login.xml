@@ -1,4 +1,4 @@
-<fest:template xmlns:fest="http://fest.mail.ru"  context_name="json">
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
       <div class="module">        
         <form class="form">
           <input type="text" placeholder="Name" class="module__form_textbox" name="name" required="required" pattern="^[a-zA-Z0-9_-]+$"/>

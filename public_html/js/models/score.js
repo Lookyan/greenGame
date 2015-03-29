@@ -8,10 +8,10 @@ define([
     	defaults: {
     		name: '',
     		score: 0
-    	},
-    	initialize: function () {
-    		console.log("Model was created");
     	}
+    	//initialize: function () {
+    	//	console.log("Model was created");
+    	//}
 
     });
 

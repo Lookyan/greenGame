@@ -7,11 +7,12 @@ define([
     var Model = Backbone.Model.extend({
         defaults: {
             value: 0,
-            suit: ''
-        },
-        initialize: function () {
-            console.log("Card was created");
+            suit: '',
+            player: 0
         }
+        //initialize: function () {
+        //    console.log("Card was created");
+        //}
 
     });
 

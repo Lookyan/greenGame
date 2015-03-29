@@ -1,48 +1,52 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
     <!--<div class="gamefield">-->
-        <div class="d1-1">
-            <div class="d1-1-1">
-                <div class="d1-1-1-1">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-1">
-                    dsgdfg
-                </div>
+    <div class="d1-1">
+        <div class="d1-1-1">
+            <div class="d1-1-1-1">
+                dsgdfg
             </div>
-            <div class="d1-1-2">
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
+            <div class="d1-1-1-2">
+                dsgdfg
             </div>
-            <div class="d1-1-1">
-                <div class="d1-1-1-1">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-2">
-                    dsgdfg
-                </div>
-                <div class="d1-1-1-1">
-                    dsgdfg
-                </div>
+            <div class="d1-1-1-2">
+                dsgdfg
+            </div>
+            <div class="d1-1-1-1">
+                dsgdfg
             </div>
         </div>
-        <div class="d1-2">
-            sdfsfsssdg
+        <div class="d1-1-2">
+            <div class="d1-1-1-2">
+                dsgdfg
+            </div>
+            <div class="d1-1-1-2">
+                <div class="d1-1-1-2-1 js-cards"></div>
+                <div class="d1-1-1-2-1 js-buttons">
+                    <button class="js-hitbutton">HIT</button><br/>
+                    <button class="js-standbutton">STAND</button>
+                </div>
+            </div>
+            <div class="d1-1-1-2">
+                dsgdfg
+            </div>
         </div>
+        <div class="d1-1-1">
+            <div class="d1-1-1-1">
+                dsgdfg
+            </div>
+            <div class="d1-1-1-2">
+                dsgdfg
+            </div>
+            <div class="d1-1-1-2">
+                dsgdfg
+            </div>
+            <div class="d1-1-1-1">
+                dsgdfg
+            </div>
+        </div>
+    </div>
+    <div class="d1-2">
+        sdfsfsssdg
+    </div>
     <!--</div>-->
 </fest:template>
