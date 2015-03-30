@@ -9,7 +9,6 @@ define([
     var View = Backbone.View.extend({
 
         template: tmpl,
-        className: 'wrap',
         initialize: function () {
             $('body').append(this.el);
             this.render();

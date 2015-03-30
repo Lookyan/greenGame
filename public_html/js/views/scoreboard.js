@@ -11,7 +11,6 @@ define([
     var View = Backbone.View.extend({
 
         template: tmpl,
-        className: 'wrap',
         model: scores,
 
         initialize: function () {

@@ -7,7 +7,13 @@ define([
     'views/signup',
     'views/manager'
 ], function(
-    Backbone, scoreboardScreen, loginScreen, mainScreen, gameScreen, signupScreen, viewManager
+    Backbone,
+    scoreboardScreen,
+    loginScreen,
+    mainScreen,
+    gameScreen,
+    signupScreen,
+    viewManager
 ){
 
     var Router = Backbone.Router.extend({
