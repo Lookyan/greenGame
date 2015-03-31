@@ -9,6 +9,7 @@ define([
     var View = Backbone.View.extend({
 
         template: tmpl,
+        className: 'menu',
 
         events: {
             "submit": "send"

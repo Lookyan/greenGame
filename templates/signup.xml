@@ -1,14 +1,10 @@
-<fest:template xmlns:fest="http://fest.mail.ru"
-    context_name="json">
-      <div class="module">        
-        <form class="form signup__form">
-          <span class="signup__hint">Only letters, digits, dash and underscore</span>
-          <input type="text" placeholder="Name" class="module__form_textbox" name="name" required="required" pattern="^[a-zA-Z0-9_-]+$"/>
-          <input type="email" placeholder="E-mail" class="module__form_textbox" name="email" required="required" />
-          <input type="password" placeholder="Password" class="module__form_textbox" name="password" required="required" />
-          <input id="signup__submit" type="submit" value="Sign up" class="module__form_button" />
-          <a href="/#" class="login__js-back"> Back </a>
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+        <form>
+            <!--<span class="signup__hint">Only letters, digits, dash and underscore</span>-->
+            <input class="menu__item menu__item_textbox" type="text" placeholder="Name" name="name" required="required" pattern="^[a-zA-Z0-9_-]+$"/>
+            <input class="menu__item menu__item_textbox" type="email" placeholder="E-mail" name="email" required="required" />
+            <input class="menu__item menu__item_textbox" type="password" placeholder="Password" name="password" required="required"/>
+            <input class="menu__item menu__item_button" id="signup__submit" type="submit" value="Sign up"/>
+            <a href="/#" class="menu__item menu__item_button menu__item_button_back"> Back </a>
         </form>
-      </div>
-    
 </fest:template>

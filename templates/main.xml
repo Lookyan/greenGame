@@ -1,10 +1,6 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
-    <div class="module">
-        <ul class="form">
-	        <li><a class="module__form_button" href="#scoreboard">Scoreboard</a></li>
-			<li><a class="module__form_button" href="#game">Game</a></li>
-			<li><a class="module__form_button" href="#login">Login</a></li>
-			<li><a class="module__form_button" href="#signup">Sign up</a></li>
-		</ul>
-    </div>
+    <a class="menu__item menu__item_button" href="#scoreboard">Scoreboard</a>
+    <a class="menu__item menu__item_button" href="#game">Game</a>
+    <a class="menu__item menu__item_button" href="#login">Login</a>
+    <a class="menu__item menu__item_button" href="#signup">Sign up</a>
 </fest:template>

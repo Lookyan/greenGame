@@ -9,6 +9,8 @@ define([
     var View = Backbone.View.extend({
 
         template: tmpl,
+        className: 'menu',
+
         initialize: function () {
             $('body').append(this.el);
             this.render();

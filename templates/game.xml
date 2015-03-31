@@ -1,52 +1,46 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
     <!--<div class="gamefield">-->
-    <div class="d1-1">
-        <div class="d1-1-1">
-            <div class="d1-1-1-1">
-                dsgdfg
+    <div class="gametable">
+        <div class="leftplayer">
+            <div class="leftplayer__freespace">
+                <a href="/#">BACK</a>
             </div>
-            <div class="d1-1-1-2">
-                dsgdfg
+            <div class="leftplayer__cardsplace">
+                left cards
             </div>
-            <div class="d1-1-1-2">
-                dsgdfg
+            <div class="leftplayer__chipsplace">
+                left chips
             </div>
-            <div class="d1-1-1-1">
-                dsgdfg
-            </div>
+            <div class="leftplayer__freespace"></div>
         </div>
-        <div class="d1-1-2">
-            <div class="d1-1-1-2">
-                dsgdfg
+        <div class="mainplayer">
+            <div class="dealer__cardsplace">
+                dealer cards
             </div>
-            <div class="d1-1-1-2">
-                <div class="d1-1-1-2-1 js-cards"></div>
-                <div class="d1-1-1-2-1 js-buttons">
+            <div class="mainplayer__cardsplace">
+                <div class="cards js-cards"></div>
+                <div class="buttons js-buttons">
                     <button class="js-hitbutton">HIT</button><br/>
                     <button class="js-standbutton">STAND</button>
                 </div>
             </div>
-            <div class="d1-1-1-2">
-                dsgdfg
+            <div class="mainplayer__chipsplace">
+                main player chips
             </div>
         </div>
-        <div class="d1-1-1">
-            <div class="d1-1-1-1">
-                dsgdfg
+        <div class="rightplayer">
+            <div class="rightplayer__freespace"></div>
+            <div class="rightplayer__cardsplace">
+                right cards
             </div>
-            <div class="d1-1-1-2">
-                dsgdfg
+            <div class="rightplayer__chipsplace">
+                right chips
             </div>
-            <div class="d1-1-1-2">
-                dsgdfg
-            </div>
-            <div class="d1-1-1-1">
-                dsgdfg
-            </div>
+            <div class="rightplayer__freespace"></div>
         </div>
     </div>
-    <div class="d1-2">
-        sdfsfsssdg
+    <div class="playerboard">
+        player board
     </div>
     <!--</div>-->
 </fest:template>

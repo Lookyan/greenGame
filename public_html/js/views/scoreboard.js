@@ -12,6 +12,7 @@ define([
 
         template: tmpl,
         model: scores,
+        className: 'menu',
 
         initialize: function () {
             $('body').append(this.el);
