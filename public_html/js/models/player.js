@@ -10,8 +10,9 @@ define([
         },
         initialize: function () {
             console.log("Player was created");
-        }
-
+        },
+        url: 'auth',
+        sync: apiSync
     });
 
     return Model;
