@@ -2,7 +2,7 @@
     <form>
         <input class="menu__item menu__item_textbox" type="text" placeholder="Name" name="name" required="required" pattern="^[a-zA-Z0-9_-]+$"/>
         <input class="menu__item menu__item_textbox" type="password" placeholder="Password" name="password" required="required"/>
-        <input class="menu__item menu__item_button" type="submit" value="Sign in"/>
+        <input name="submit" class="menu__item menu__item_button" type="submit" value="Sign in"/>
         <a href="/#" class="menu__item menu__item_button menu__item_button_back"> Back </a>
     </form>
 </fest:template>
