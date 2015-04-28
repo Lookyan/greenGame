@@ -13,7 +13,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   background: white;
-  @include box-shadow( 0 15px 0 rgba(0, 0, 0, 0.45));
+  @include box-shadow( 0 15px 0 rgba(0, 0, 0, 0.15));
 }
 
 .menu__item {

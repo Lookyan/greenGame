@@ -1,6 +1,0 @@
-<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
-    <a class="menu__item menu__item_button" href="#scoreboard">Scoreboard</a>
-    <a class="menu__item menu__item_button" href="#game">Game</a>
-    <a class="menu__item menu__item_button" href="#login">Login</a>
-    <a class="menu__item menu__item_button" href="#signup">Sign up</a>
-</fest:template>
