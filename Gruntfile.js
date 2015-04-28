@@ -45,10 +45,18 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true
                 }
+            },
+            sass: {
+                files: ['public_html/css/scss/*.scss'],
+                tasks: ['sass'],
+                options: {
+                    atBegin: true,
+                    interrupt: true
+                }
             }
         },
         concurrent: {
-            target: ['watch', 'shell', 'sass'],
+            target: ['watch', 'shell'],
             options: {
                 logConcurrentOutput: true
             }
