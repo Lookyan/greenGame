@@ -1,143 +1,114 @@
-*{  
+* {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-html {
-    height: 100%;
-}
+html, body {
+  height: 100%; }
 
 body {
-    height: 100%;
-    background-color: #f0f0f0;
-    font-family: Helvetica;
-    overflow: hidden;
-}
+  background-color: #f0f0f0;
+  font-family: Helvetica, serif;
+  overflow: hidden; }
 
 .menu {
-    margin-top: 30px;
-    /*position: relative;*/
-    /*top: 15%;*/
-    /*height: 70%;*/
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 40px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background: RGBA(255,255,255,1);
-
-    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .45);
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .45);
-}
-
-/*.form{*/
-    /*height: 86%;*/
-    /*width: 100%;*/
-    /*box-sizing: border-box;*/
-    /*padding: 10px 40px;*/
-/*}*/
+  margin-top: 30px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0 15px 0 rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 15px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: 0 15px 0 rgba(0, 0, 0, 0.45); }
 
 .menu__item {
-    box-sizing: border-box;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .menu__item_button {
-    height: 50px;
-    width: 100%;
-    border-radius: 5px;
-    border: 0;
-    /*box-sizing: border-box;*/
-    padding: 15px;
-    /*margin-bottom: 30px;*/
-    /*margin-top: 30px;*/
-    background: #90c843;
-    color: #FFF;
-    /*font-weight: bold;*/
-    /*font-size:  12pt;*/
-    /*transition: background .4s;*/
-    /*cursor: pointer;*/
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12pt;
-    text-align: center;
-}
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px;
+  background: #90c843;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12pt;
+  text-align: center; }
 
 .menu__item_button_back {
-    background: #FFAD00;
-}
+  background-color: #FFAD00; }
 
 .scoretable {
-    width: 100%;
-    /*max-width: 600px;*/
-    border-collapse: collapse;
-    border: 1px solid #FFAD00;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin: 30px 0;*/
-    /*background: white;*/
-}
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #FFAD00; }
 
 .scoretable__row {
-    border-bottom: 1px solid #FFAD00;
-}
-.scoretable__cell {
-    border-right: 1px solid #FFAD00;
-    padding: 10px;
-    /*transition: all 0.2s;*/
-}
+  border-bottom: 1px solid #FFAD00; }
 
-.menu__item_textbox{
-    height: 50px;
-    width: 100%;
-    display: block;
-    border-radius: 5px;
-    border: rgba(0,0,0,.3) 2px solid;
-    /*box-sizing: border-box;*/
-    padding: 10px;
-}
+.scoretable__cell {
+  border-right: 1px solid #FFAD00;
+  padding: 10px; }
+
+.menu__item_textbox {
+  height: 50px;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+  padding: 10px; }
 
 .menu__item_textbox:focus {
-    outline: none;
-    border: rgba(24,149,215,1) 2px solid;
-    color: rgba(24,149,215,1);
-}
+  outline: none;
+  border: #1895d7 2px solid;
+  color: #1895d7; }
 
-/*.login__js-back {*/
-    /*height: 50px;*/
-    /*width: 100%;*/
-    /*border-radius: 3px;*/
-    /*border: rgba(0,0,0,.3) 0px solid;*/
-    /*box-sizing: border-box;*/
-    /*padding: 15px;*/
-    /*margin-bottom: 30px;*/
-    /*background: #FFAD00;*/
-    /*color: #FFF;*/
-    /*font-weight: bold;*/
-    /*font-size: 12pt;*/
-    /*transition: background .4s;*/
-    /*cursor: pointer;*/
-/*}*/
+.gamefield {
+  background-color: yellow;
+  height: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  min-width: 1000px;
+  position: relative; }
 
-/*.signup__hint {*/
-    /*font-size: x-small;*/
-/*}*/
+.gametable {
+  height: 100%;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  background-color: #2E8B57; }
 
-/*.game {*/
-  /*background-color: #466d19;*/
-  /*background-image: 0;*/
-  /*overflow: hidden;*/
-  /*position: relative;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*min-height: 480px;*/
-  /*font: 400 16px/1.4 futura-pt,Helvetica,Arial,sans-serif;*/
-/*}*/
+.playerboard {
+  position: absolute;
+  bottom: 0;
+  background-color: #CD853F;
+  height: 100px;
+  width: 100%; }
 
-/*#player-cards {*/
-  /*position: relative;*/
-  /*bottom: 0px;*/
-/*}*/
+.secondaryplayer, .leftplayer, .rightplayer {
+  height: 100%;
+  width: 30%;
+  float: left; }
+
+.mainplayer {
+  height: 100%;
+  width: 40%;
+  float: left; }
+
+.freespace, .leftplayer__freespace, .rightplayer__freespace {
+  height: 16.66666666%;
+  border: 1px black solid; }
+
+.place, .leftplayer__cardsplace, .rightplayer__cardsplace, .dealer__cardsplace, .mainplayer__cardsplace, .leftplayer__chipsplace, .rightplayer__chipsplace, .mainplayer__chipsplace {
+  height: 33.33333333%;
+  border: 1px black solid; }
+
+.cards, .buttons {
+  float: left;
+  width: 50%; }
