@@ -10,10 +10,10 @@ define(function ApiSync() {
     };
 
     var urlMap  = {
-        'login': '/api/v1/signin/',
-        'register': '/api/v1/signup/',
-        'identifyUser': 'identifyuser/',
-        'logout': '/api/v1/auth/logout'
+        'login': 'api/v1/signin/',
+        'register': 'api/v1/signup/',
+        'identifyUser': 'api/v1/identifyuser/',
+        'logout': 'api/v1/auth/logout'
     }
 
 	return function(method, model, options) {

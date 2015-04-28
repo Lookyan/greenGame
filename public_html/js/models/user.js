@@ -14,7 +14,8 @@ define([
         defaults: {
             "login": "",
             "score": 0,
-            "passw": ""
+            "passw": "",
+            "email": ""
         },
 
         initialize: function() {
