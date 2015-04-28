@@ -13,6 +13,9 @@ define([
         template: tmpl,
         className: 'menu',
         user: userModel,
+        throttled: _.throttle(function(signupInfo) {
+                localStorage.setItem("signupInfo", JSON.stringify(signupInfo));
+            }, 1000),
 
         events: {
             "submit": "send",
@@ -88,12 +91,12 @@ define([
         },
 
         saveFormFields: function(event) {
-            var loginInfoInd = this.$("form").serializeArray();
-            var loginInfo = {};
-            $.map(loginInfoInd, function(n, i) {
-                loginInfo[n.name] = n.value;
+            var signupInfoInd = this.$("form").serializeArray();
+            var signupInfo = {};
+            $.map(signupInfoInd, function(n, i) {
+                signupInfo[n.name] = n.value;
             });
-            localStorage.setItem("signupInfo", JSON.stringify(loginInfo));
+            this.throttled(signupInfo);
         }
 
     });

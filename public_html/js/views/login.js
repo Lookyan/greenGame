@@ -13,6 +13,9 @@ define([
         template: tmpl,
         className: 'menu',
         user: userModel,
+        throttled: _.throttle(function(loginInfo) {
+                localStorage.setItem("loginInfo", JSON.stringify(loginInfo));
+            }, 1000),
 
         events: {
             "submit": "send",
@@ -90,7 +93,8 @@ define([
             $.map(loginInfoInd, function(n, i) {
                 loginInfo[n.name] = n.value;
             });
-            localStorage.setItem("loginInfo", JSON.stringify(loginInfo));
+            this.throttled(loginInfo);
+            
         }
 
     });
